@@ -16,10 +16,10 @@ jobs:
     - name: 📂 Sync Files via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: ftp.siteflicker.com
+        server: siteflicker.com
         username: wuhxiabj
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./
-        server-dir: /home/wuhxiabj/siteflicker.com/wp-content/themes/staging/
+        server-dir: /home/wuhxiabj/siteflicker.com/staging/wp-content/themes/staging/
         security: implicit # Or try removing 'security' entirely if port 21 handles plain FTP automatically 
