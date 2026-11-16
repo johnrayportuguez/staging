@@ -22,4 +22,3 @@ jobs:
         port: 21
         local-dir: ./
         server-dir: /public_html/wp-content/themes/staging/
-        security: implicit # Or try removing 'security' entirely if port 21 handles plain FTP automatically 
