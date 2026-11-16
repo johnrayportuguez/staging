@@ -5,21 +5,21 @@ on:
     branches:
       - main
 
-
 jobs:
   web-deploy:
-    name: 🚀 Deploy Website Every Commit
+    name: 🚀 Deploy Website Every Commit via FTP
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get Latest Code
       uses: actions/checkout@v3
     
-    - name: 📂 Sync Files
-      uses: SamKirkland/web-deploy@v1
+    - name: 📂 Sync Files via FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: www.siteflicker.com
+        server: siteflicker.com
         username: wuhxiabj
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./
         server-dir: /home/wuhxiabj/www.siteflicker.com/wp-content/themes/staging/
+        security: implicit # Or try removing 'security' entirely if port 21 handles plain FTP automatically
