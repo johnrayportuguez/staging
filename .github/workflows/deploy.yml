@@ -16,7 +16,7 @@ jobs:
     - name: 📂 Sync Files via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: siteflicker.com
+        server: www.siteflicker.com
         username: wuhxiabj
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
