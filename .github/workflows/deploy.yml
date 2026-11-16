@@ -21,5 +21,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./
-        server-dir: /home/wuhxiabj/www.siteflicker.com/staging/wp-content/themes/staging/
+        server-dir: /public_html/wp-content/themes/staging/
         security: implicit # Or try removing 'security' entirely if port 21 handles plain FTP automatically 
