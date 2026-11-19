@@ -101,3 +101,29 @@ button,.button,input[type="submit"] { display:inline-block; padding:.65rem 1rem;
   .footer-widgets { grid-template-columns:1fr; }
 }
 @media print { .main-navigation,.widget-area,.site-footer,.comments-area,.post-navigation { display:none; } .site-content { display:block; width:100%; padding:0; } a { color:inherit; text-decoration:none; } }
+
+.custom-top-banner {
+    background-color: #1e293b; /* Dark slate background */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    position: relative;
+    z-index: 9999;
+}
+
+.custom-top-banner p {
+    margin: 0;
+}
+
+.custom-top-banner a {
+    color: #38bdf8; /* Light blue accent */
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 6px;
+}
+
+.custom-top-banner a:hover {
+    color: #ffffff;
+}
